@@ -1,0 +1,54 @@
+GRÁFICOS
+
+** World 
+
+- Número de mulhers no mundo (população mundial): 
+    . gráfico de linha
+    . ao longo dos anos
+    . uma linha para mulheres e uma linha para homens
+
+- Onde elas estão distribuidas:
+    . gráfico de mapa ou de treeMap
+    . onde as mulheres estão concentradas por continente
+
+** Workers
+
+- Número de mulheres trabalhando
+    . grafico de linha
+    . vs homens - uma linha para as mulheres e outra para os homens
+    . ao longo dos anos
+
+- No que as mulheres trabalham
+    . gráfico de treeMap
+    . empregos comuns das mulheres (professoras, médicas, engenheiras, etc)
+
+- Média de idade das mulheres que trabalham
+    . gráfico de linhas - evolução da média de idade pelos anos
+    . vs homens - uma linha para mulheres e outra para os homens
+    . ao longo dos anos
+
+- Média salarial das mulheres que trabalham
+    . gráfico de linhas - evolução da média salarial das mulheres
+    . vs homens - uma linha para as mulheres e outra para os homens
+    . ao longo dos anos
+
+** In Tech
+
+- Número de mulheres na tecnologia
+    . gráfico de linha
+    . vs homens
+    . ao longo dos anos
+
+- Áreas da tecnologia em que elas atuam
+    . gráfico de treeMap
+    . treeMaps de atuação (developers, testers, tecnicas, gerentes, SM)
+
+- Média de idade das mulheres que trabalham em tecnologia
+    . gráfico de linhas - evolução da média de idade pelos anos
+    . vs homens - uma linha para mulheres e outra para os homens
+    . ao longo dos anos
+
+- Média salarial das mulheres que trabalham em tecnologia
+    . gráfico de linhas - evolução da média salarial das mulheres
+    . vs homens - uma linha para as mulheres e outra para os homens
+    . ao longo dos anos
