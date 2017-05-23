@@ -7,3 +7,9 @@
 	height: 250px;
 	width: 511px;
 }
+
+div[id^="chart-"] {
+	height: 250px;
+	display: flex;
+	align-items: center;
+}

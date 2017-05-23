@@ -1,8 +1,70 @@
-var lineChartData = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
+// MAP'S
+$('#chart-1 .chart').vectorMap({
+	map              : 'world_mill_en',
+	normalizeFunction: 'polynomial',
+	hoverOpacity     : 0.7,
+	hoverColor       : false,
+	backgroundColor  : 'transparent',
+	regionStyle      : {
+	  initial      : {
+	    fill            : 'rgba(210, 214, 222, 1)',
+	    'fill-opacity'  : 1,
+	    stroke          : 'none',
+	    'stroke-width'  : 0,
+	    'stroke-opacity': 1
+	  },
+	  hover        : {
+	    'fill-opacity': 0.7,
+	    cursor        : 'pointer'
+	  },
+	  selected     : {
+	    fill: 'yellow'
+	  },
+	  selectedHover: {}
+	},
+	markerStyle      : {
+	  initial: {
+	    fill  : 'rgba(60,141,188,1)',
+	    stroke: '#111'
+	  }
+	},
+	markers          : [
+	  { latLng: [41.90, 12.45], name: 'Vatican City' },
+	  { latLng: [43.73, 7.41], name: 'Monaco' },
+	  { latLng: [-0.52, 166.93], name: 'Nauru' },
+	  { latLng: [-8.51, 179.21], name: 'Tuvalu' },
+	  { latLng: [43.93, 12.46], name: 'San Marino' },
+	  { latLng: [47.14, 9.52], name: 'Liechtenstein' },
+	  { latLng: [7.11, 171.06], name: 'Marshall Islands' },
+	  { latLng: [17.3, -62.73], name: 'Saint Kitts and Nevis' },
+	  { latLng: [3.2, 73.22], name: 'Maldives' },
+	  { latLng: [35.88, 14.5], name: 'Malta' },
+	  { latLng: [12.05, -61.75], name: 'Grenada' },
+	  { latLng: [13.16, -61.23], name: 'Saint Vincent and the Grenadines' },
+	  { latLng: [13.16, -59.55], name: 'Barbados' },
+	  { latLng: [17.11, -61.85], name: 'Antigua and Barbuda' },
+	  { latLng: [-4.61, 55.45], name: 'Seychelles' },
+	  { latLng: [7.35, 134.46], name: 'Palau' },
+	  { latLng: [42.5, 1.51], name: 'Andorra' },
+	  { latLng: [14.01, -60.98], name: 'Saint Lucia' },
+	  { latLng: [6.91, 158.18], name: 'Federated States of Micronesia' },
+	  { latLng: [1.3, 103.8], name: 'Singapore' },
+	  { latLng: [1.46, 173.03], name: 'Kiribati' },
+	  { latLng: [-21.13, -175.2], name: 'Tonga' },
+	  { latLng: [15.3, -61.38], name: 'Dominica' },
+	  { latLng: [-20.2, 57.5], name: 'Mauritius' },
+	  { latLng: [26.02, 50.55], name: 'Bahrain' },
+	  { latLng: [0.33, 6.73], name: 'São Tomé and Príncipe' }
+	]
+});
+
+
+// LINE'S
+var chartData2 = {
+  labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"],
   datasets: [
     {
-      label: "Electronics",
+      label: "Homens",
       fillColor: "rgba(210, 214, 222, 1)",
       strokeColor: "rgba(210, 214, 222, 1)",
       pointColor: "rgba(210, 214, 222, 1)",
@@ -12,7 +74,7 @@ var lineChartData = {
       data: [65, 59, 80, 81, 56, 55, 40]
     },
     {
-      label: "Digital Goods",
+      label: "Mulheres",
       fillColor: "rgba(60,141,188,0.9)",
       strokeColor: "rgba(60,141,188,0.8)",
       pointColor: "#3b8bba",
@@ -24,7 +86,59 @@ var lineChartData = {
   ]
 };
 
-var areaChartOptions = {
+var chartData3 = {
+  labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+  datasets: [
+    {
+      label: "Homens",
+      fillColor: "rgba(210, 214, 222, 1)",
+      strokeColor: "rgba(210, 214, 222, 1)",
+      pointColor: "rgba(210, 214, 222, 1)",
+      pointStrokeColor: "#c1c7d1",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+      data: [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+      label: "Mulheres",
+      fillColor: "#00a65a",
+      strokeColor: "#00a65a",
+      pointColor: "#00a65a",
+      pointStrokeColor: "rgba(60,141,188,1)",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(60,141,188,1)",
+      data: [28, 48, 40, 19, 86, 27, 90]
+    }
+  ]
+};
+
+var chartData6 = {
+  labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+  datasets: [
+    {
+      label: "Homens",
+      fillColor: "rgba(210, 214, 222, 1)",
+      strokeColor: "rgba(210, 214, 222, 1)",
+      pointColor: "rgba(210, 214, 222, 1)",
+      pointStrokeColor: "#c1c7d1",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+      data: [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+      label: "Mulheres",
+      fillColor: "#f56954",
+      strokeColor: "#f56954",
+      pointColor: "#f56954",
+      pointStrokeColor: "#f56954",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(60,141,188,1)",
+      data: [28, 48, 40, 19, 86, 27, 90]
+    }
+  ]
+};
+
+var lineChartOptions = {
   //Boolean - If we should show the scale at all
   showScale: true,
   //Boolean - Whether grid lines are shown across the chart
@@ -54,7 +168,7 @@ var areaChartOptions = {
   //Number - Pixel width of dataset stroke
   datasetStrokeWidth: 2,
   //Boolean - Whether to fill the dataset with a color
-  datasetFill: true,
+  datasetFill: false,
   //String - A legend template
   legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
   //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
@@ -63,54 +177,36 @@ var areaChartOptions = {
   responsive: true
 };
 
-//-------------
-//- LINE CHART -
-//--------------
-var lineChartCanvas = $("#chart-2 canvas").get(0).getContext("2d");
-var lineChart = new Chart(lineChartCanvas);
-var lineChartOptions = areaChartOptions;
-lineChartOptions.datasetFill = false;
-lineChart.Line(lineChartData, lineChartOptions);
+var chartCanvas2 = $("#chart-2 canvas").get(0).getContext("2d");
+var chart2 = new Chart(chartCanvas2);
+chart2.Line(chartData2, lineChartOptions);
 
-//-------------
-//- LINE CHART -
-//--------------
-var lineChartCanvas = $("#chart-3 canvas").get(0).getContext("2d");
-var lineChart = new Chart(lineChartCanvas);
-var lineChartOptions = areaChartOptions;
-lineChartOptions.datasetFill = false;
-lineChart.Line(lineChartData, lineChartOptions);
+var chartCanvas3 = $("#chart-3 canvas").get(0).getContext("2d");
+var chart3 = new Chart(chartCanvas3);
+chart3.Line(chartData3, lineChartOptions);
 
-//-------------
-//- LINE CHART -
-//--------------
-var lineChartCanvas = $("#lineChart3").get(0).getContext("2d");
-var lineChart = new Chart(lineChartCanvas);
-var lineChartOptions = areaChartOptions;
-lineChartOptions.datasetFill = false;
-lineChart.Line(lineChartData, lineChartOptions);
+var chartCanvas6 = $("#chart-6 canvas").get(0).getContext("2d");
+var chart6 = new Chart(chartCanvas6);
+chart6.Line(chartData6, lineChartOptions);
 
-//-------------
-//- PIE CHART -
-//-------------
-// Get context with jQuery - using jQuery's .get() method.
-var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
-var pieChart = new Chart(pieChartCanvas);
-var PieData = [
+
+// PIE'S
+var chartData5 = [
   {
     value: 150,
-    color: "#f56954",
-    highlight: "#f56954",
-    label: "Chrome"
+    color: "#00a65a",
+    highlight: "#00a65a",
+    label: "Mulheres"
   },
   {
     value: 100,
     color: "#d2d6de",
     highlight: "#d2d6de",
-    label: "Navigator"
+    label: "Homens"
   }
 ];
-var pieOptions = {
+
+var pieChartOptions = {
   //Boolean - Whether we should show a stroke on each segment
   segmentShowStroke: true,
   //String - The colour of each segment stroke
@@ -134,13 +230,65 @@ var pieOptions = {
   //String - A legend template
   legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
 };
-//Create pie or douhnut chart
-// You can switch between pie and douhnut using the method below.
-pieChart.Doughnut(PieData, pieOptions);
 
-//-------------
-//- BAR CHART -
-//-------------
+var chartCanvas5 = $("#chart-5 canvas").get(0).getContext("2d");
+var chart5 = new Chart(chartCanvas5);
+chart5.Doughnut(chartData5, pieChartOptions);
+
+
+// BAR'S
+var chartData4 = {
+  labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+  datasets: [
+    {
+      label: "Homens",
+      fillColor: "#d2d6de",
+      strokeColor: "#d2d6de",
+      pointColor: "#d2d6de",
+      pointStrokeColor: "#d2d6de",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+      data: [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+      label: "Mulheres",
+      fillColor: "#00a65a",
+      strokeColor: "#00a65a",
+      pointColor: "#00a65a",
+      pointStrokeColor: "#00a65a",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "#00a65a",
+      data: [28, 48, 40, 19, 86, 27, 90]
+    }
+  ]
+};
+
+var chartData8 = {
+  labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+  datasets: [
+    {
+      label: "Mulheres",
+      fillColor: "#F56954",
+      strokeColor: "#FF6954",
+      pointColor: "#F56954",
+      pointStrokeColor: "#c1c7d1",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+      data: [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+      label: "Homens",
+      fillColor: "#d2d6de",
+      strokeColor: "#d2d6de",
+      pointColor: "#d2d6de",
+      pointStrokeColor: "rgba(60,141,188,1)",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(60,141,188,1)",
+      data: [28, 48, 40, 19, 86, 27, 90]
+    }
+  ]
+};
+
 var barChartOptions = {
   //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
   scaleBeginAtZero: true,
@@ -166,81 +314,14 @@ var barChartOptions = {
   legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
   //Boolean - whether to make the chart responsive
   responsive: true,
+  datasetFill: false,
   maintainAspectRatio: true
 };
-var barChartCanvas = $("#barChart").get(0).getContext("2d");
-var barChart = new Chart(barChartCanvas);
-var barChartData = lineChartData;
-barChartData.datasets[1].fillColor = "#00a65a";
-barChartData.datasets[1].strokeColor = "#00a65a";
-barChartData.datasets[1].pointColor = "#00a65a";
-barChartOptions.datasetFill = false;
-barChart.Bar(barChartData, barChartOptions);
 
-var barChartCanvas = $("#barChart2").get(0).getContext("2d");
-var barChart = new Chart(barChartCanvas);
-var barChartData = lineChartData;
-barChartData.datasets[1].fillColor = "#00a65a";
-barChartData.datasets[1].strokeColor = "#00a65a";
-barChartData.datasets[1].pointColor = "#00a65a";
-barChartOptions.datasetFill = false;
-barChart.Bar(barChartData, barChartOptions);
+var chartCanvas4 = $("#chart-4 canvas").get(0).getContext("2d");
+var chart4 = new Chart(chartCanvas4);
+chart4.Bar(chartData4, barChartOptions);
 
-$('#chart-1 .chart').vectorMap({
-map              : 'world_mill_en',
-normalizeFunction: 'polynomial',
-hoverOpacity     : 0.7,
-hoverColor       : false,
-backgroundColor  : 'transparent',
-regionStyle      : {
-  initial      : {
-    fill            : 'rgba(210, 214, 222, 1)',
-    'fill-opacity'  : 1,
-    stroke          : 'none',
-    'stroke-width'  : 0,
-    'stroke-opacity': 1
-  },
-  hover        : {
-    'fill-opacity': 0.7,
-    cursor        : 'pointer'
-  },
-  selected     : {
-    fill: 'yellow'
-  },
-  selectedHover: {}
-},
-markerStyle      : {
-  initial: {
-    fill  : 'rgba(60,141,188,1)',
-    stroke: '#111'
-  }
-},
-markers          : [
-  { latLng: [41.90, 12.45], name: 'Vatican City' },
-  { latLng: [43.73, 7.41], name: 'Monaco' },
-  { latLng: [-0.52, 166.93], name: 'Nauru' },
-  { latLng: [-8.51, 179.21], name: 'Tuvalu' },
-  { latLng: [43.93, 12.46], name: 'San Marino' },
-  { latLng: [47.14, 9.52], name: 'Liechtenstein' },
-  { latLng: [7.11, 171.06], name: 'Marshall Islands' },
-  { latLng: [17.3, -62.73], name: 'Saint Kitts and Nevis' },
-  { latLng: [3.2, 73.22], name: 'Maldives' },
-  { latLng: [35.88, 14.5], name: 'Malta' },
-  { latLng: [12.05, -61.75], name: 'Grenada' },
-  { latLng: [13.16, -61.23], name: 'Saint Vincent and the Grenadines' },
-  { latLng: [13.16, -59.55], name: 'Barbados' },
-  { latLng: [17.11, -61.85], name: 'Antigua and Barbuda' },
-  { latLng: [-4.61, 55.45], name: 'Seychelles' },
-  { latLng: [7.35, 134.46], name: 'Palau' },
-  { latLng: [42.5, 1.51], name: 'Andorra' },
-  { latLng: [14.01, -60.98], name: 'Saint Lucia' },
-  { latLng: [6.91, 158.18], name: 'Federated States of Micronesia' },
-  { latLng: [1.3, 103.8], name: 'Singapore' },
-  { latLng: [1.46, 173.03], name: 'Kiribati' },
-  { latLng: [-21.13, -175.2], name: 'Tonga' },
-  { latLng: [15.3, -61.38], name: 'Dominica' },
-  { latLng: [-20.2, 57.5], name: 'Mauritius' },
-  { latLng: [26.02, 50.55], name: 'Bahrain' },
-  { latLng: [0.33, 6.73], name: 'São Tomé and Príncipe' }
-]
-});
+var chartCanvas8 = $("#chart-8 canvas").get(0).getContext("2d");
+var chart8 = new Chart(chartCanvas8);
+chart8.Bar(chartData8, barChartOptions);
