@@ -1,0 +1,9 @@
+#chart-1 .chart{
+	height: 250px;
+	width: 511px;
+}
+
+#chart-2 canvas, #chart-3 canvas, {
+	height: 250px;
+	width: 511px;
+}
