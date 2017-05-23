@@ -22,11 +22,6 @@ GRÁFICOS
     . gráfico de treeMap
     . empregos comuns das mulheres (professoras, médicas, engenheiras, etc)
 
-- Média de idade das mulheres que trabalham
-    . gráfico de linhas - evolução da média de idade pelos anos
-    . vs homens - uma linha para mulheres e outra para os homens
-    . ao longo dos anos
-
 - Média salarial das mulheres que trabalham
     . gráfico de linhas - evolução da média salarial das mulheres
     . vs homens - uma linha para as mulheres e outra para os homens
@@ -42,11 +37,6 @@ GRÁFICOS
 - Áreas da tecnologia em que elas atuam
     . gráfico de treeMap
     . treeMaps de atuação (developers, testers, tecnicas, gerentes, SM)
-
-- Média de idade das mulheres que trabalham em tecnologia
-    . gráfico de linhas - evolução da média de idade pelos anos
-    . vs homens - uma linha para mulheres e outra para os homens
-    . ao longo dos anos
 
 - Média salarial das mulheres que trabalham em tecnologia
     . gráfico de linhas - evolução da média salarial das mulheres
