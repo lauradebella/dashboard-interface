@@ -71,7 +71,7 @@ var chartData2 = {
       pointStrokeColor: "#c1c7d1",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
-      data: [65, 59, 80, 81, 56, 55, 40]
+      data: [40, 59, 60, 80, 89, 97, 132]
     },
     {
       label: "Mulheres",
@@ -81,7 +81,7 @@ var chartData2 = {
       pointStrokeColor: "rgba(60,141,188,1)",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(60,141,188,1)",
-      data: [28, 48, 40, 19, 86, 27, 90]
+      data: [37, 49, 50, 76, 83, 90, 112]
     }
   ]
 };
@@ -97,7 +97,7 @@ var chartData3 = {
       pointStrokeColor: "#c1c7d1",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
-      data: [65, 59, 80, 81, 56, 55, 40]
+      data: [59, 60, 80, 89, 97, 132, 159]
     },
     {
       label: "Mulheres",
@@ -107,7 +107,7 @@ var chartData3 = {
       pointStrokeColor: "rgba(60,141,188,1)",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(60,141,188,1)",
-      data: [28, 48, 40, 19, 86, 27, 90]
+      data: [20, 39, 63, 67, 77, 96, 140]
     }
   ]
 };
@@ -123,7 +123,7 @@ var chartData6 = {
       pointStrokeColor: "#c1c7d1",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
-      data: [65, 59, 80, 81, 56, 55, 40]
+      data: [90, 119, 130, 160, 199, 207, 232]
     },
     {
       label: "Mulheres",
@@ -133,7 +133,7 @@ var chartData6 = {
       pointStrokeColor: "#f56954",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(60,141,188,1)",
-      data: [28, 48, 40, 19, 86, 27, 90]
+      data: [19, 37, 49, 50, 76, 83, 90]
     }
   ]
 };
@@ -193,13 +193,13 @@ chart6.Line(chartData6, lineChartOptions);
 // PIE'S
 var chartData5 = [
   {
-    value: 150,
+    value: 130,
     color: "#00a65a",
     highlight: "#00a65a",
     label: "Mulheres"
   },
   {
-    value: 100,
+    value: 300,
     color: "#d2d6de",
     highlight: "#d2d6de",
     label: "Homens"
@@ -274,7 +274,7 @@ var chartData8 = {
       pointStrokeColor: "#c1c7d1",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
-      data: [65, 59, 80, 81, 56, 55, 40]
+      data: [28, 48, 40, 39, 36, 27, 50]
     },
     {
       label: "Homens",
@@ -284,7 +284,7 @@ var chartData8 = {
       pointStrokeColor: "rgba(60,141,188,1)",
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(60,141,188,1)",
-      data: [28, 48, 40, 19, 86, 27, 90]
+      data: [65, 59, 80, 81, 56, 55, 70]
     }
   ]
 };
