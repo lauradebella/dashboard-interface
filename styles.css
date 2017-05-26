@@ -9,7 +9,15 @@
 }
 
 div[id^="chart-"] {
-	height: 250px;
-	display: flex;
-	align-items: center;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+div[id^="chart-"] div[class="col"] {
+	padding: 10px;
+}
+
+div[id^="chart-"]:last-child{
+	border-bottom: none;
 }
