@@ -193,13 +193,13 @@ chart6.Line(chartData6, lineChartOptions);
 // PIE'S
 var chartData5 = [
   {
-    value: 130,
+    value: 35,
     color: "#00a65a",
     highlight: "#00a65a",
     label: "Mulheres"
   },
   {
-    value: 300,
+    value: 65,
     color: "#d2d6de",
     highlight: "#d2d6de",
     label: "Homens"
